@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Migration Utilities</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ </head>
+ <body class="container">
+   <h1>Migration Utilities</h1>
+   <form action="/" method="POST">
+     <h2>MODS Namespace Removal</h2>
+     <p>Utility takes a collection PID and iterates through all
+        child pids, extracts MODS, and if the xml uses namespaces,
+        removes MODS namespace and saves back MODS XML back to 
+        original PIDS</p> 
+     <input type="hidden" name="action" value="mods_ns_rm">
+     <input type="text" placeholder="PID" name="pid"></input>
+   </form>
+ </body>
+</html>
